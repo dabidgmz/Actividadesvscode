@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/js/bootstrap.bundle.min.js"></script>
+
+  <title>Historial y Antecedentes</title>
+  <style>
+    /* Estilos personalizados para el sidebar y contenido */
+    /* ...Copia y pega los estilos del ejemplo anterior... */
+    .sidebar {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 250px;
+          height: 100vh;
+          background: linear-gradient(to bottom, #d6fcfa, #fff);
+          padding: 20px;
+        }
+    
+        .sidebar a {
+          display: block;
+          color: #000;
+          text-decoration: none;
+          margin-bottom: 10px;
+        }
+    
+        .sidebar a i {
+          margin-right: 10px;
+        }
+    
+        .sidebar a:hover {
+          opacity: 0.8;
+        }
+    
+        .logo {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 20px;
+        }
+    
+        .logo img {
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          margin-right: 10px;
+        }
+    
+        .content {
+          margin-left: 20%;
+          width: 80%;
+        }
+        
+        /* Estilo personalizado para los elementos en fila */
+        .row {
+          display: flex;
+          flex-wrap: wrap;
+          margin-right: -5px;
+          margin-left: -5px;
+        }
+    
+        .col-md-3,
+        .col-md-4,
+        .col-md-6 {
+          padding-right: 5px;
+          padding-left: 5px;
+          width: 100%;
+        }
+    
+        @media (min-width: 768px) {
+          .col-md-3 {
+            width: 25%;
+          }
+          
+          .col-md-4 {
+            width: 33.33%;
+          }
+          
+          .col-md-6 {
+            width: 50%;
+          }
+        }
+  </style>
+</head>
+
+<body>
+<div class="sidebar">
+  <div class="logo">
+    <img src="logo.jpg" alt="Logo">
+  </div>
+  <ul class="nav flex-column">
+    <li class="nav-item">
+      <a class="nav-link" href="aggimg.html"><i class="fas fa-box"></i><span>Gestionar Producto</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="trabaj.html"><i class="fas fa-users"></i><span>Gestionar Trabajadores</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="paciente.html"><i class="fas fa-user"></i><span>Gestionar Pacientes</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="agenda.html"><i class="fas fa-calendar-alt"></i><span>Gestionar Agenda</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="consulta.html"><i class="fas fa-stethoscope"></i><span>Realizar Consulta</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="receta.html"><i class="fas fa-prescription"></i><span>Generar Receta</span></a>
+    </li>
+  </ul>
+</div>
+
+
+  <div class="content">
+    <h2>Receta</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="mb-3">
+          <label for="nombrePaciente">Nombre del paciente:</label>
+          <input type="text" class="form-control" id="nombrePaciente">
+        </div>
+        <div class="mb-3">
+          <label for="edad">Edad:</label>
+          <input type="text" class="form-control" id="edad">
+        </div>
+        <div class="mb-3">
+        <div class="mb-3">
+          <label for="plasticos">Plásticos:</label>
+          <input type="text" class="form-control" id="plasticos">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="mb-3">
+          <label for="armazon">Armazón:</label>
+          <input type="text" class="form-control" id="armazon">
+        </div>
+        <div class="mb-3">
+          <label for="totalPedido">Total de Pedido:</label>
+          <input type="text" class="form-control" id="totalPedido">
+        </div>
+        <div class="mb-3">
+          <label for="firma">Firma del Optometrista / Enfermera:</label>
+          <input type="text" class="form-control" id="firma">
+        </div>
+      </div>
+    </div>
+    
+    <h2>Manejo y Recomendaciones</h2>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="mb-3">
+          <label for="dip">DIP:</label>
+          <input type="text" class="form-control" id="dip">
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="mb-3">
+          <label for="armazonManejo">ARMAZÓN:</label>
+          <input type="text" class="form-control" id="armazonManejo">
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="mb-3">
+          <label for="material">MATERIAL:</label>
+          <input type="text" class="form-control" id="material">
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="mb-3">
+          <label for="esf">ESF:</label>
+          <input type="text" class="form-control" id="esf">
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="mb-3">
+          <label for="cil">CIL:</label>
+          <input type="text" class="form-control" id="cil">
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="mb-3">
+          <label for="eje">EJE:</label>
+          <input type="text" class="form-control" id="eje">
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="mb-3">
+          <label for="prisma">PRISMA:</label>
+          <input type="text" class="form-control" id="prisma">
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="mb-3">
+          <label for="rxFinal">RX FINAL:</label>
+          <input type="text" class="form-control" id="rxFinal">
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="mb-3">
+          <label for="od">O.D:</label>
+          <input type="text" class="form-control" id="od">
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="mb-3">
+          <label for="oi">O.I:</label>
+          <input type="text" class="form-control" id="oi">
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="mb-3">
+          <label for="add">ADD:</label>
+          <input type="text" class="form-control" id="add">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="mb-3">
+          <label for="tratamientoManejo">Tratamiento:</label>
+          <textarea class="form-control" id="tratamientoManejo" rows="5"></textarea>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="mb-3">
+          <label for="diagnosticoManejo">Diagnóstico:</label>
+          <textarea class="form-control" id="diagnosticoManejo" rows="5"></textarea>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="mb-3">
+          <label for="inicio">Inicio:</label>
+          <input type="text" class="form-control" id="inicio">
+        </div>
+      </div>
+      <div class="col-md-12">
+        <button type="submit" class="btn btn-primary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+<div class="content">
+  <div class="container">
+    <h2>Receta</h2>
+    <!-- Resto del contenido de la sección "Receta" -->
+  </div>
+</div>
