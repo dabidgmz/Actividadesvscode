@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>mayor que y menor que</title>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <ul class="navigation">
+                <li><a href="ptc1.html">Tablas de Multiplicar</a></li>
+                <li><a href="ptc2.html">Pares Impares Primos</a></li>
+                <li><a href="#" class="active">numero mayor que y menor que </a></li>
+                <li><a href="ptc4.html">Dia y mes</a></li>
+                <li><a href="ptc5.html">promedio de alumno </a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Compara los numeros</h1>
+    
+    <label for="numero1">Número 1:</label>
+    <input type="number" id="numero1">
+    
+    <label for="numero2">Número 2:</label>
+    <input type="number" id="numero2">
+    <button onclick="compararNumeros()">Imprimir</button>
+    <div id="resultados"></div>
+    <script type="text/javascript">
+        function compararNumeros() {
+            var num1 = parseFloat(document.getElementById("numero1").value);
+            var num2 = parseFloat(document.getElementById("numero2").value);
+            
+            if (isNaN(num1) || isNaN(num2)) {
+                alert("Por favor, introduce números válidos.");
+                return;
+            }
+            
+            var mayor = Math.max(num1, num2);
+            var menor = Math.min(num1, num2);
+            
+            var resultado = "El número mayor es: " + mayor + "<br>";
+            resultado += "El número menor es: " + menor;
+            
+            document.getElementById("resultados").innerHTML = resultado;
+        }
+    </script>
+</body>
+</html>

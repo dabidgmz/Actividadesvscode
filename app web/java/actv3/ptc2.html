@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css"> 
+    <title>pares impares primos</title>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <ul class="navigation">
+                <li><a href="ptc1.html">Tablas de Multiplicar</a></li>
+                <li><a href="#" class="active">Pares, Impares ,Primos</a></li>
+                <li><a href="ptc3.html">Mnumero mayor que y menor que  </a></li>
+                <li><a href="ptc4.html">Dias y mes</a></li>
+                <li><a href="ptc5.html">promedio de alumno </a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Organizador de Números</h1>
+    <label for="numero">Número:</label>
+    <input type="number" id="numero">
+    <button onclick="agregarNumero()">Agregar</button>
+    <button onclick="organizarNumeros()">Organizar</button>
+    
+    <div id="resultados">
+    </div>
+    <script type="text/javascript">
+    var numeros = [];
+        
+        function agregarNumero() {
+            var numero = parseInt(document.getElementById("numero").value);
+            if (isNaN(numero)) {
+                alert("Por favor, introduce un número válido.");
+                return;
+            }
+            numeros.push(numero);
+            document.getElementById("numero").value = "";
+        }
+        function organizarNumeros() {
+            var pares = [];
+            var impares = [];
+            var primos = [];
+            
+            for (var i = 0; i < numeros.length; i++) {
+                var num = numeros[i];
+                
+                if (num % 2 === 0) {
+                    pares.push(num);
+                } else {
+                    impares.push(num);
+                }
+                
+                if (esPrimo(num)) {
+                    primos.push(num);
+                }
+            }
+            var resultado = "<h2>Pares</h2>" + pares.join(", ") + "<br>";
+            resultado += "<h2>Impares</h2>" + impares.join(", ") + "<br>";
+            resultado += "<h2>Primos</h2>" + primos.join(", ");
+            document.getElementById("resultados").innerHTML = resultado;
+        }
+        
+        function esPrimo(numero) {
+            if (numero < 2) {
+                return false;
+            }
+            for (var i = 2; i < numero; i++) {
+                if (numero % i === 0) {
+                    return false;
+                }
+            }
+            
+            return true;
+        }
+    </script>
+</body>
+</html>

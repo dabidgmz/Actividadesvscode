@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>camina chucho</button>
+    <p>chucho no ha caminado</p>
+    <script src="js/persona.js"></script>
+    <script type="text/javascript"> 
+        alert("ola mundo..");
+        let nombre = "juan";
+        console.log("ola mundo",nombre); 
+
+    const persona = new Persona();
+    persona.setnombre("luis");
+    console.log(persona.getnombre());
+
+    let button=document.querySelector("button")
+    let p = document.querySelector("p");
+    function perrocamina(info){
+        Perro.setcamina();
+        console.log(Perro.getpasos());
+        p.innerHTML="chucho lleva"+Perro.getpasos()+"pasos(s).."
+    }
+    button.addEventListener("click",function()
+    {
+        Perro.setcamina();
+        console.log(Perro.getpasos())
+    })
+    console.log(Perro.getedad());
+    Perro.setcamina();
+    Perro.setcamina();
+    console.log(Perro.getpasos());
+    </script>
+</body>
+</html>

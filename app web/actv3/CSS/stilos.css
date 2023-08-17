@@ -1,0 +1,125 @@
+/* Estilos para el encabezado */
+header {
+	display: flex;/*" establece el elemento header como un contenedor flexible.*/
+	flex-direction: column;/* la dirección de los elementos dentro del contenedor */
+	align-items: center;/*el alineamiento vertical de los elementos dentro del contenedor header en el centro.*/
+	background-color: #f2f2f2c0;/**/
+	padding: 20px;/*espacio de 20 píxeles entre el contenido del elemento y su borde.*/
+	border-bottom: 1px solid #cccccc56;/*habrá una línea sólida de color gris claro semitransparente debajo del elemento */
+} 
+#quiensoy {
+	color: rgb(17, 16, 16); /* Color del texto */
+	font-size: 22px;
+	text-align: left /* Alineación de texto */
+}
+p {
+	font-style: italic;
+}
+img {
+float: left;
+margin-right: 10px; /* agrega un margen a la derecha de la imagen para que no quede pegada al texto */
+}
+#nombre {
+text-align: center;}
+#tec{
+text-align: center;
+}
+body {box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);} /*margen*/
+#nombre {
+	font-size: 32px;/**/
+	margin-top: 10px;/**/
+}  
+  /* Estilos para la imagen */
+#gato {
+	width: 200px;/**/
+	height: 200px;/**/
+	border-radius: 100%;/**/
+}  
+  /* Estilos para el cuerpo principal */
+main {
+	max-width: 800px;/**/
+	margin: 0 auto;/*centrará horizontalmente el elemento main en su contenedor.*/
+	padding: 20px;/* habrá un espacio de 20 píxeles entre el contenido del elemento y su borde.*/
+}
+h2 {
+	color: #000000;/**/
+	font-size: 28px;/**/
+	margin-top: 30px;/**/
+	border-bottom: 1px solid black;/*habrá una línea negra sólida debajo del elemento.*/
+}
+    .parra {
+	font-size: 18px;
+	margin-bottom: 10px;/*agrega espacio en blanco después de cada elemento*/
+} 
+  /* Estilos para la sección "Sobre mí" */
+#quiensoy {
+	color: #666;/**/
+	font-size: 24px;/*stablece el tamaño de fuente del texto dentro del elemento con el ID "quiensoy" en 24 píxeles*/
+	margin-top: 40px; /*margen superior de 40 píxeles para el elemento con el ID "quiensoy".*/
+}  
+  /* Estilos para la sección "Educación" */
+#edu {
+	margin-top: 60px;/**/
+} 
+  /* Estilos para la lista de habilidades */
+ul {
+	list-style-type: none; /*limina el estilo de viñeta predeterminado de las listas sin ordenar*/
+	margin: 0; /*elimina el espacio en blanco predeterminado entre los elementos de la lista y los márgenes de la ventana del navegador*/
+	padding: 0; /**/
+}
+li {
+	font-size: 18px;/* establece el tamaño de fuente del texto dentro de los elementos "li"*/
+	margin-bottom: 5px; /* un margen inferior de 5 píxeles para cada elemento "li". Esta propiedad agrega un espacio vertical entre cada elemento de lista*/
+}
+  /* Estilos para la sección de idiomas */
+.idio {
+	margin-top: 40px;/*margin-top: 40px; establece un margen superior de 40 píxeles para el elemento con la clase .idio*/
+}  
+  /* Estilos para el pie de página */
+footer {
+	background-color: #333;/*background-color: #333; establece el color de fondo del pie de página como un tono oscuro de gris (el código de color #333 en hexadecimal).*/
+	color: #fff; /*color: #fff; establece el color del texto en el pie de página como blanco (#fff en hexadecimal)*/
+	text-align: center; /*text-align: center; centra el texto en el pie de página horizontalmente*/
+	padding: 10px; /*padding: 10px; establece un relleno de 10 píxeles en el interior del pie de página, separando su contenido del borde.*/
+	margin-top: 50px; /*margin-top: 50px; establece un margen superior de 50 píxeles para separar el pie de página de otros elementos en la página.*/
+} 
+.redes {
+	display: flex; /*  flexbox para centrar y alinear los elementos en su interio*/
+	justify-content: center;/* justify-content: center; centra los elementos en el eje horizontal (horizontalmente)*/
+	align-items: center;/* align-items: center; centra los elementos en el eje vertical (verticalmente).*/
+	margin-top: 20px; /* margin-top: 20px; establece un margen superior de 20 píxeles para separar el contenedor de otros elementos en la página.*/
+}
+.redes a {
+	margin: 0 10px;
+}
+.redes img {
+	width: 40px;  /* width: 40px; establece un ancho de 40 píxeles para las imágenes de los enlaces. */
+	height: 40px; /* height: 40px; establece una altura de 40 píxeles para las imágenes de los enlaces. */
+	transition: transform .3s; /* height: 40px; establece una altura de 40 píxeles para las imágenes de los enlaces.*/
+}
+.redes img:hover { /* :hover es un pseudo-selector que se aplica cuando el cursor del ratón se coloca sobre un elemento*/
+	transform: scale(1.2);  /* transform: scale(1.2); aplica una transformación de escala a las imágenes, aumentando su tamaño en un 20% cuando el cursor se coloca sobre ellas. */
+}  
+#redes{
+	color: #ccc;
+}
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;    
+    list-style: none;
+    margin: 0; 
+	background-color: #f2f2f2c0;/**/
+}  
+.navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: rgb(10, 10, 10);
+}
+.navigation a:hover {
+    background: #a3a7ab;
+}
+.active{
+    border-bottom: 10px solid rgb(156, 156, 156);    
+}

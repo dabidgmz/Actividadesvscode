@@ -1,0 +1,16 @@
+{
+    "name": "dd/ptc3",
+    "description": "aui haremos lo que es crud",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Dd\\Ptc3\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "david gomez herrera"
+        }
+    ],
+    "require": {}
+}

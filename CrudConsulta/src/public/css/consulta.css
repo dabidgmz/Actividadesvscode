@@ -1,0 +1,130 @@
+/* Estilo personalizado para el sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background: linear-gradient(to bottom, #d6fcfa, #fff);
+    padding: 20px;
+    z-index: 1;
+    transition: all 0.3s;
+  }
+
+  .sidebar a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .sidebar a i {
+    margin-right: 10px;
+  }
+
+  .sidebar a:hover {
+    background-color: #d6fcfa;
+    color: #000;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .logo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .container-fluid {
+    margin-left: 250px;
+    padding: 20px;
+    transition: all 0.3s;
+  }
+
+  @media (max-width: 767px) {
+    /* Estilos para pantallas más pequeñas */
+    .sidebar {
+      transform: translateX(-100%);
+    }
+
+    .container-fluid {
+      margin-left: 0;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .sidebar.active {
+      transform: translateX(0);
+    }
+
+    .container-fluid.active {
+      margin-left: 0;
+    }
+
+    /* Estilos para el navbar en pantallas pequeñas */
+    .collapse-button {
+      display: block;
+      position: fixed;
+      top: 20px;
+      right: 20px; /* Cambiado de 'left' a 'right' */
+      z-index: 1;
+      color: #000;
+      background-color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s;
+    }
+
+    .collapse-button i {
+      line-height: 40px;
+    }
+  }
+
+  /* Estilo personalizado para el botón de colapso */
+  .collapse-button.hidden {
+    display: none;
+  }
+
+  /* Estilos adicionales */
+  h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    color: #777;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  #content a.logout-link {
+    background-color: #ff5f5f;
+    color: #fff;
+  }
+
+  #content a.logout-link:hover {
+    background-color: #e53e3e;
+  }
+
+  #content {
+    max-width: calc(100% - 250px); /* Agrega esta línea */
+  }
+
+  @media (max-width: 767px) {
+    #content:not(.active) {
+      max-width: none; /* Cancela la regla anterior */
+    }
+  }

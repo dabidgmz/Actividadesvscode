@@ -1,0 +1,17 @@
+{
+    "name": "consulta/david",
+    "description": "aqui se va realizar el crud para agregar laa consulta ala base de datos como tal por parte del admin",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "dabidgmz",
+            "email": "david.gmzherrera28@gmail.com"
+        }
+    ],
+    "require": {}
+}

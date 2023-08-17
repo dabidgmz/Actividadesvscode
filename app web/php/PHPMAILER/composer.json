@@ -1,0 +1,18 @@
+{
+    "name": "dd28/phpmailerptc",
+    "description": "aqui se hara la practica de php mailer",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Dd28\\Phpmailerptc\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "david gomez herrera"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.8"
+    }
+}

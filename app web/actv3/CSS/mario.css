@@ -1,0 +1,324 @@
+.contenedor{
+  height: 480px;
+  width: 100%;
+  background-color: #92c5fc;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  bottom: 100px;
+}
+.u1
+{
+  display: flex;
+  height: 5%;
+  width: 100%;
+
+}
+
+.cast
+{
+display: flex;
+  height: 100%;
+  width: 30%;
+  flex-direction: column-reverse;
+  align-items: end;
+}
+
+.i1{
+width: 100%;
+background-color: orangered;
+
+}
+.i2{
+  width: 80%;
+  background-color: orangered;
+
+}
+.i3{
+  width: 60%;
+  background-color: orangered;
+
+
+}
+.u2
+{
+  display: flex;
+  height: 8%;
+  width: 100%;
+}
+.itemsls
+{
+  width: 90%;
+  background-color: orangered;
+  border-bottom: black solid 2.5px;
+  border-top:  #000000 solid 5px;
+
+}
+.puerta
+{
+  
+  background-color: black;
+  border: black solid 2px;
+  width: 100%;
+  height: 25px;
+  position: relative;
+  
+  
+}
+.i4
+{
+  border-bottom:hsl(0, 0%, 0%) solid 5px;
+  width: 100%;
+}
+.i5
+{
+  border-bottom:#000000 solid 5px;
+  width: 100%;
+  background-color: orangered;
+}
+.linea{
+  height: 50%;
+  width: 100%;
+  display: flex;
+}
+.i6
+{
+  width: 100%;
+  background-color: orangered;
+
+}
+.u4
+{
+  display: flex;
+  height: 5%;
+  width: 55%;
+  margin-right: 22.5%;
+
+}
+.u5
+{
+  display: flex;
+  height: 5%;
+  width: 55%;
+  margin-right: 22.5%;
+
+}
+.img
+{
+width: 100%;
+height: 100%;
+
+}
+.contladrillo
+{
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+}
+.imagen{
+  width: 5%;
+  height: 30%;
+  display: flex;
+}
+.piedra
+{
+  width: 50%;
+  height: 50%;
+  background-color: orangered;
+}
+.ContBandera{
+  width: 70%;
+  height: 30%;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+.bandera {
+  width: 10%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+.b1
+{
+  height: 20%;
+  width: 70%;
+  display: flex;
+}
+.b2{
+  height: 900%;
+  width: 10%;
+  background-image: linear-gradient(90deg, lime, white);
+}
+.b3
+{
+  width: 0; 
+height: 0; 
+border-right: 80px solid white;
+border-bottom: 80px solid transparent;
+float:right ;
+margin-right:  5px ;
+}
+#mario{
+  height: 120px;
+  width: 60px;
+  left: 0;
+  right:0;
+  top: 300;
+  display: flex;
+  position: relative;
+  transition: top 0.5s ease; 
+  animation-duration : 0.2s;
+  animation-fill-mode : forwards;
+}
+.vent
+{
+  background-color: black;
+  border: black solid 2px;
+  height: 60px;
+  width: 100%;
+  position: relative;
+}
+#container {
+  position: relative;
+  height: 300px; /* Ajusta la altura del contenedor según tus necesidades */
+}
+@media all and  (max-width: 600px)
+{
+
+  .cast{
+  width: 100%;
+  }
+  .b2{
+  width: 5px;
+  }
+  .b1{
+      width: 70px;
+      height: 60px;
+  }
+
+}
+@media all and  (max-width: 800px)
+{
+  .cast{
+  width: 100%;
+  }
+  .b2{
+  width: 5px;
+  }
+  .b1{
+      width: 70px;
+      height: 60px;
+  }
+
+}
+
+@keyframes jump {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -50px; /* Ajusta la altura del salto en píxeles */
+  }
+  100% {
+    top: 0;
+  }
+}
+.navigation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;    
+  list-style: none;
+  margin: 0; 
+background-color: #f2f2f2c0;/**/
+}  
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: rgb(21, 20, 20);
+}
+.navigation a:hover {
+  background: #1565C0;
+}  
+.footer {
+  background: blueviolet;
+}  
+.main {
+  text-align: left;
+  background: deepskyblue;
+}  
+.aside-1 {
+  background: green;
+}  
+.aside-2 {
+  background: hotpink;
+}
+.active{
+  border-bottom: 10px solid rgb(165, 165, 165);    
+}
+.botones-container {
+  position: relative;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  grid-gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardinality-btn {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: none;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.cardinality-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+footer{
+  margin-bottom: 0px; margin-left: 0px; margin-right: 0px; 
+  height: 60px;
+  border: 1px black solid;
+}
+.ventana{
+  width: 30px;
+  height: 90px;
+  background: #000;
+}
+#puerta-1{
+  z-index: 11;   
+  width: 54px; height: 84px;
+  background-color: black;
+  position: absolute; top: 95px; left: 119px;
+
+}
+#puerta-2{
+  z-index: 11;   
+  width: 48px; height: 50px;
+  background-color: black;
+  position: absolute; top: 87px; left: 121px;
+
+}
+#puerta-3{
+  z-index: 11;   
+  width: 38px; height: 50px;
+  background-color: black;
+  position: absolute; top: 79px; left: 126px;
+
+}
+#puerta-4{
+  z-index: 11;   
+  width: 28px; height: 50px;
+  background-color: black;
+  position: absolute; top: 75px; left: 131px;
+}

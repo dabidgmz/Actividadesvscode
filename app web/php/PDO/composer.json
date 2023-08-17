@@ -1,0 +1,16 @@
+{
+    "name": "lenovo/pdo",
+    "description": "aqui se va a realizar lo que es pdo",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "David Gomez herrera"
+        }
+    ],
+    "require": {}
+}
